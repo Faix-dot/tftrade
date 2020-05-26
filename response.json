@@ -1,0 +1,20 @@
+for x in range(len(dict['buy']['listings'])):
+    try:
+        if dict['buy']['listings'][x]['item']['attributes']:
+            ()
+    except KeyError:
+        break
+
+for bpmetalX in dict['buy']['listings'][x]['currencies']:
+    try:
+        if dict['buy']['listings'][x]['currencies']['metal']:
+            bpmetal = dict['buy']['listings'][x]['currencies']['metal']
+    except KeyError:
+        bpmetal = 0
+
+for bpkeysX in dict['buy']['listings'][x]['currencies']:
+    try:
+        if dict['buy']['listings'][x]['currencies']['keys']:
+            bpkeys = dict['buy']['listings'][x]['currencies']['keys']
+    except KeyError:
+        bpkeys = 0
